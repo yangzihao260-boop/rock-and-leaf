@@ -1,0 +1,6 @@
+{
+  "name": "Leaf & Rock Falling Words",
+  "description": "An interactive mid-air falling word game for elementary school students to learn the words leaf and rock with pronunciations, speeds, and cheerful sound effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

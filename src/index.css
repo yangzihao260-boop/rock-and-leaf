@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@keyframes cloudSlow {
+  0% { transform: translateX(-10%); }
+  50% { transform: translateX(20%); }
+  100% { transform: translateX(-10%); }
+}
+
+@keyframes cloudMedium {
+  0% { transform: translateX(15%); }
+  50% { transform: translateX(-15%); }
+  100% { transform: translateX(15%); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+@keyframes balloonFloat {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-20px) rotate(1.5deg); }
+}
+
+@keyframes flyAcross {
+  0% { transform: translateX(-50px) translateY(0); }
+  50% { transform: translateX(60px) translateY(-10px); }
+  100% { transform: translateX(180px) translateY(5px); }
+}
+
+@keyframes bounceGentle {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.03); }
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-cloud-slow {
+  animation: cloudSlow 40s ease-in-out infinite;
+}
+
+.animate-cloud-medium {
+  animation: cloudMedium 30s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.animate-balloon {
+  animation: balloonFloat 6s ease-in-out infinite;
+}
+
+.animate-fly-across {
+  animation: flyAcross 25s linear infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounceGentle 2.5s ease-in-out infinite;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
